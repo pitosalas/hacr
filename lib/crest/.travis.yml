@@ -1,0 +1,18 @@
+language: crystal
+crystal:
+  - latest
+
+script:
+  - make test
+  - crystal tool format src/ --check
+  - bin/ameba
+  - crystal docs
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  project_name: crest
+  local_dir: docs
+  on:
+    branch: master

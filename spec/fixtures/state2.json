@@ -1,0 +1,423 @@
+{
+  "lights": {
+    "1": {
+      "state": {
+        "on": true,
+        "bri": 1,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Hue white lamp 1",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:02:8d:81:73-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "75D50777",
+      "productid": "Philips-LWB014-1-A19DLv3"
+    },
+    "2": {
+      "state": {
+        "on": true,
+        "bri": 1,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Hue white lamp 2",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:02:f0:09:0e-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "75D50777",
+      "productid": "Philips-LWB014-1-A19DLv3"
+    },
+    "3": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Hue white lamp 3",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:39:24:99-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    },
+    "4": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Hue white lamp 4",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:15:3d:0a-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    },
+    "5": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Hue white lamp 5",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:3d:c8:e5-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    },
+    "6": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": false
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Hue white lamp 6",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:3d:c8:ec-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    }
+  },
+  "groups": {
+    "1": {
+      "name": "Living",
+      "lights": [
+        "4",
+        "5",
+        "6",
+        "3",
+        "2",
+        "1"
+      ],
+      "sensors": [],
+      "type": "Room",
+      "state": {
+        "all_on": true,
+        "any_on": true
+      },
+      "recycle": false,
+      "class": "Living room",
+      "action": {
+        "on": true,
+        "bri": 1,
+        "alert": "none"
+      }
+    }
+  },
+  "config": {
+    "name": "Philips hue",
+    "zigbeechannel": 15,
+    "bridgeid": "001788FFFE71C27D",
+    "mac": "00:17:88:71:c2:7d",
+    "dhcp": true,
+    "ipaddress": "10.0.0.89",
+    "netmask": "255.255.255.0",
+    "gateway": "10.0.0.1",
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "UTC": "2018-10-21T00:50:14",
+    "localtime": "2018-10-20T20:50:14",
+    "timezone": "America/New_York",
+    "modelid": "BSB002",
+    "datastoreversion": "73",
+    "swversion": "1809121051",
+    "apiversion": "1.27.0",
+    "swupdate": {
+      "updatestate": 0,
+      "checkforupdate": false,
+      "devicetypes": {
+        "bridge": false,
+        "lights": [],
+        "sensors": []
+      },
+      "url": "",
+      "text": "",
+      "notify": false
+    },
+    "swupdate2": {
+      "checkforupdate": false,
+      "lastchange": "2018-10-20T18:24:50",
+      "bridge": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "state": "noupdates",
+      "autoinstall": {
+        "updatetime": "T14:00:00",
+        "on": false
+      }
+    },
+    "linkbutton": false,
+    "portalservices": false,
+    "portalconnection": "connected",
+    "portalstate": {
+      "signedon": true,
+      "incoming": false,
+      "outgoing": true,
+      "communication": "disconnected"
+    },
+    "internetservices": {
+      "internet": "connected",
+      "remoteaccess": "disconnected",
+      "time": "connected",
+      "swupdate": "connected"
+    },
+    "factorynew": false,
+    "replacesbridgeid": null,
+    "backup": {
+      "status": "idle",
+      "errorcode": 0
+    },
+    "starterkitid": "",
+    "whitelist": {
+      "78UEGUotX3otmWxbhiucELCLiiKmaD9E2O5YW-d1": {
+        "last use date": "2018-10-21T00:50:14",
+        "create date": "2018-10-20T17:54:35",
+        "name": "my_hue_app#iphone peter"
+      },
+      "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp": {
+        "last use date": "2018-10-20T18:31:40",
+        "create date": "2018-10-20T18:22:50",
+        "name": "Hue 3#RpsIphone"
+      }
+    }
+  },
+  "schedules": {},
+  "scenes": {
+    "GX9QiSrGsRJMM92": {
+      "name": "Bright",
+      "lights": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "o5OXm_r01_d05"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-20T18:25:44",
+      "version": 2
+    },
+    "1DNM5cm3sR83OgR": {
+      "name": "Dimmed",
+      "lights": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "sHxcP_r01_d06"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-20T18:25:44",
+      "version": 2
+    },
+    "CSiArHPJWaD0XIW": {
+      "name": "Nightlight",
+      "lights": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "gHofY_r01_d07"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-20T18:25:44",
+      "version": 2
+    }
+  },
+  "rules": {},
+  "sensors": {
+    "1": {
+      "state": {
+        "daylight": null,
+        "lastupdated": "none"
+      },
+      "config": {
+        "on": true,
+        "configured": false,
+        "sunriseoffset": 30,
+        "sunsetoffset": -30
+      },
+      "name": "Daylight",
+      "type": "Daylight",
+      "modelid": "PHDL00",
+      "manufacturername": "Philips",
+      "swversion": "1.0"
+    }
+  },
+  "resourcelinks": {}
+}

@@ -1,0 +1,99 @@
+{
+  "lights": {},
+  "groups": {},
+  "config": {
+    "name": "Philips hue",
+    "zigbeechannel": 15,
+    "bridgeid": "001788FFFE71C27D",
+    "mac": "00:17:88:71:c2:7d",
+    "dhcp": true,
+    "ipaddress": "10.0.0.89",
+    "netmask": "255.255.255.0",
+    "gateway": "10.0.0.1",
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "UTC": "2018-10-20T18:03:33",
+    "localtime": "none",
+    "timezone": "none",
+    "modelid": "BSB002",
+    "datastoreversion": "73",
+    "swversion": "1809121051",
+    "apiversion": "1.27.0",
+    "swupdate": {
+      "updatestate": 0,
+      "checkforupdate": false,
+      "devicetypes": {
+        "bridge": false,
+        "lights": [],
+        "sensors": []
+      },
+      "url": "",
+      "text": "",
+      "notify": false
+    },
+    "swupdate2": {
+      "checkforupdate": false,
+      "lastchange": null,
+      "bridge": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "state": "noupdates",
+      "autoinstall": {
+        "updatetime": "T14:00:00",
+        "on": false
+      }
+    },
+    "linkbutton": false,
+    "portalservices": false,
+    "portalconnection": "connected",
+    "portalstate": {
+      "signedon": true,
+      "incoming": false,
+      "outgoing": true,
+      "communication": "disconnected"
+    },
+    "internetservices": {
+      "internet": "connected",
+      "remoteaccess": "disconnected",
+      "time": "connected",
+      "swupdate": "connected"
+    },
+    "factorynew": true,
+    "replacesbridgeid": null,
+    "backup": {
+      "status": "idle",
+      "errorcode": 0
+    },
+    "starterkitid": "",
+    "whitelist": {
+      "78UEGUotX3otmWxbhiucELCLiiKmaD9E2O5YW-d1": {
+        "last use date": "2018-10-20T18:03:33",
+        "create date": "2018-10-20T17:54:35",
+        "name": "my_hue_app#iphone peter"
+      }
+    }
+  },
+  "schedules": {},
+  "scenes": {},
+  "rules": {},
+  "sensors": {
+    "1": {
+      "state": {
+        "daylight": null,
+        "lastupdated": "none"
+      },
+      "config": {
+        "on": true,
+        "configured": false,
+        "sunriseoffset": 30,
+        "sunsetoffset": -30
+      },
+      "name": "Daylight",
+      "type": "Daylight",
+      "modelid": "PHDL00",
+      "manufacturername": "Philips",
+      "swversion": "1.0"
+    }
+  },
+  "resourcelinks": {}

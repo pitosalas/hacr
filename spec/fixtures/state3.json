@@ -1,0 +1,938 @@
+{
+  "lights": {
+    "1": {
+      "state": {
+        "on": true,
+        "bri": 144,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Steps left",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:02:8d:81:73-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "75D50777",
+      "productid": "Philips-LWB014-1-A19DLv3"
+    },
+    "2": {
+      "state": {
+        "on": true,
+        "bri": 148,
+        "alert": "select",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Streps right",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:02:f0:09:0e-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "75D50777",
+      "productid": "Philips-LWB014-1-A19DLv3"
+    },
+    "3": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "none",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Mantel left",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:39:24:99-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    },
+    "4": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "select",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Stairs",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:15:3d:0a-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    },
+    "5": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "select",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Mantel right",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:3d:c8:e5-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    },
+    "6": {
+      "state": {
+        "on": true,
+        "bri": 254,
+        "alert": "select",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "type": "Dimmable light",
+      "name": "Sofa",
+      "modelid": "LWB014",
+      "manufacturername": "Philips",
+      "productname": "Hue white lamp",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 5000,
+          "maxlumen": 840
+        },
+        "streaming": {
+          "renderer": false,
+          "proxy": false
+        }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "functional",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:17:88:01:03:3d:c8:ec-0b",
+      "swversion": "1.29.0_r21169",
+      "swconfigid": "321D79EA",
+      "productid": "Philips-LWB014-1-A19DLv4"
+    }
+  },
+  "groups": {
+    "1": {
+      "name": "Livingroom",
+      "lights": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "sensors": [],
+      "type": "Room",
+      "state": {
+        "all_on": true,
+        "any_on": true
+      },
+      "recycle": false,
+      "class": "Living room",
+      "action": {
+        "on": true,
+        "bri": 254,
+        "alert": "none"
+      }
+    },
+    "2": {
+      "name": "Front",
+      "lights": [
+        "2",
+        "1"
+      ],
+      "sensors": [],
+      "type": "Room",
+      "state": {
+        "all_on": true,
+        "any_on": true
+      },
+      "recycle": false,
+      "class": "Living room",
+      "action": {
+        "on": true,
+        "bri": 144,
+        "alert": "none"
+      }
+    }
+  },
+  "config": {
+    "name": "Philips hue",
+    "zigbeechannel": 15,
+    "bridgeid": "001788FFFE71C27D",
+    "mac": "00:17:88:71:c2:7d",
+    "dhcp": true,
+    "ipaddress": "10.0.0.89",
+    "netmask": "255.255.255.0",
+    "gateway": "10.0.0.1",
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "UTC": "2018-10-23T00:54:19",
+    "localtime": "2018-10-22T20:54:19",
+    "timezone": "America/New_York",
+    "modelid": "BSB002",
+    "datastoreversion": "73",
+    "swversion": "1809121051",
+    "apiversion": "1.27.0",
+    "swupdate": {
+      "updatestate": 0,
+      "checkforupdate": false,
+      "devicetypes": {
+        "bridge": false,
+        "lights": [],
+        "sensors": []
+      },
+      "url": "",
+      "text": "",
+      "notify": false
+    },
+    "swupdate2": {
+      "checkforupdate": false,
+      "lastchange": "2018-10-21T01:44:18",
+      "bridge": {
+        "state": "noupdates",
+        "lastinstall": null
+      },
+      "state": "noupdates",
+      "autoinstall": {
+        "updatetime": "T14:00:00",
+        "on": false
+      }
+    },
+    "linkbutton": false,
+    "portalservices": true,
+    "portalconnection": "connected",
+    "portalstate": {
+      "signedon": true,
+      "incoming": false,
+      "outgoing": true,
+      "communication": "disconnected"
+    },
+    "internetservices": {
+      "internet": "connected",
+      "remoteaccess": "connected",
+      "time": "connected",
+      "swupdate": "connected"
+    },
+    "factorynew": false,
+    "replacesbridgeid": null,
+    "backup": {
+      "status": "idle",
+      "errorcode": 0
+    },
+    "starterkitid": "",
+    "whitelist": {
+      "78UEGUotX3otmWxbhiucELCLiiKmaD9E2O5YW-d1": {
+        "last use date": "2018-10-23T00:54:19",
+        "create date": "2018-10-20T17:54:35",
+        "name": "my_hue_app#iphone peter"
+      },
+      "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp": {
+        "last use date": "2018-10-22T23:46:40",
+        "create date": "2018-10-20T18:22:50",
+        "name": "Hue 3#RpsIphone"
+      },
+      "rjV6OXFntA0widLQZpidsPQg65cj4bGBgfbAHiww": {
+        "last use date": "2018-10-22T19:01:40",
+        "create date": "2018-10-21T03:00:40",
+        "name": "Echo"
+      },
+      "nlHr5n2Ea1Waf-9yTrxRVLzOpR0P2dciNDOW6DL7": {
+        "last use date": "2018-10-22T20:01:40",
+        "create date": "2018-10-21T13:41:09",
+        "name": "HueNest#WebService"
+      },
+      "HC0XoXbNiWeeKhrXjti6tMt8a-Q0a2NUwKIutJZA": {
+        "last use date": "2018-10-22T23:46:40",
+        "create date": "2018-10-21T18:24:43",
+        "name": "hue-alexa-smarthome-skill-v1"
+      }
+    }
+  },
+  "schedules": {
+    "1": {
+      "name": "Go to sleep start",
+      "description": "Trigger go to sleep start",
+      "command": {
+        "address": "/api/oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY/sensors/5/state",
+        "body": {
+          "flag": true
+        },
+        "method": "PUT"
+      },
+      "localtime": "W127/T22:00:00",
+      "time": "W127/T02:00:00",
+      "created": "2018-10-21T01:44:18",
+      "status": "enabled",
+      "recycle": true
+    },
+    "2": {
+      "name": "nest-morning-off",
+      "description": "By hue Nest",
+      "command": {
+        "address": "/api/nlHr5n2Ea1Waf-9yTrxRVLzOpR0P2dciNDOW6DL7/groups/0/action",
+        "body": {
+          "on": false
+        },
+        "method": "PUT"
+      },
+      "localtime": "W127/T09:00:00A00:30:00",
+      "time": "W127/T13:00:00A00:30:00",
+      "created": "2018-10-21T13:52:50",
+      "status": "disabled",
+      "recycle": false
+    },
+    "3": {
+      "name": "nest-evening-on",
+      "description": "By hue Nest",
+      "command": {
+        "address": "/api/nlHr5n2Ea1Waf-9yTrxRVLzOpR0P2dciNDOW6DL7/groups/0/action",
+        "body": {
+          "on": true
+        },
+        "method": "PUT"
+      },
+      "localtime": "W127/T18:00:00A00:30:00",
+      "time": "W127/T22:00:00A00:30:00",
+      "created": "2018-10-21T13:52:50",
+      "status": "disabled",
+      "recycle": false
+    },
+    "4": {
+      "name": "nest-evening-off",
+      "description": "By hue Nest",
+      "command": {
+        "address": "/api/nlHr5n2Ea1Waf-9yTrxRVLzOpR0P2dciNDOW6DL7/groups/0/action",
+        "body": {
+          "on": false
+        },
+        "method": "PUT"
+      },
+      "localtime": "W127/T23:00:00A00:30:00",
+      "time": "W127/T03:00:00A00:30:00",
+      "created": "2018-10-21T13:52:50",
+      "status": "disabled",
+      "recycle": false
+    },
+    "5": {
+      "name": "nest-morning-on",
+      "description": "By hue Nest",
+      "command": {
+        "address": "/api/nlHr5n2Ea1Waf-9yTrxRVLzOpR0P2dciNDOW6DL7/groups/0/action",
+        "body": {
+          "on": true
+        },
+        "method": "PUT"
+      },
+      "localtime": "W127/T07:00:00A00:30:00",
+      "time": "W127/T11:00:00A00:30:00",
+      "created": "2018-10-21T13:52:51",
+      "status": "disabled",
+      "recycle": false
+    }
+  },
+  "scenes": {
+    "GX9QiSrGsRJMM92": {
+      "name": "Bright",
+      "lights": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "o5OXm_r01_d05"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:40:55",
+      "version": 2
+    },
+    "1DNM5cm3sR83OgR": {
+      "name": "Dimmed",
+      "lights": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "sHxcP_r01_d06"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:40:55",
+      "version": 2
+    },
+    "CSiArHPJWaD0XIW": {
+      "name": "Nightlight",
+      "lights": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "gHofY_r01_d07"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:40:55",
+      "version": 2
+    },
+    "xhUiyn3IrYVkJD0": {
+      "name": "Bright",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "AFmiJ_r02_d05"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:40:55",
+      "version": 2
+    },
+    "P2ekfnjJf2C8UX6": {
+      "name": "Dimmed",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "5kBj1_r02_d06"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:40:56",
+      "version": 2
+    },
+    "hJhoGiizjJ6IOpa": {
+      "name": "Nightlight",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "LeM0a_r02_d07"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:40:56",
+      "version": 2
+    },
+    "Wrz0KzWoCt0P-8A": {
+      "name": "Go to sleep start",
+      "lights": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": true,
+      "locked": true,
+      "appdata": {
+        "version": 1,
+        "data": "4si3V_r00"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:44:18",
+      "version": 2
+    },
+    "C5MoOCaA6WeLiSC": {
+      "name": "Go to sleep end",
+      "lights": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": true,
+      "locked": true,
+      "appdata": {
+        "version": 1,
+        "data": "owBm7_r00"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-21T01:44:18",
+      "version": 2
+    },
+    "tomdYwJj7BJAtlK": {
+      "name": "Scene myScene huelabs/sunset-t",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": true,
+      "locked": false,
+      "appdata": {},
+      "picture": "",
+      "lastupdated": "2018-10-22T23:33:06",
+      "version": 2
+    },
+    "h52ObSN-WX71Uc6": {
+      "name": "50",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "locked": false,
+      "appdata": {
+        "version": 1,
+        "data": "r8U8a_r02_d99"
+      },
+      "picture": "",
+      "lastupdated": "2018-10-22T23:34:55",
+      "version": 2
+    },
+    "OzUGvczbksBKkAp": {
+      "name": "Scene myScene huelabs/sunset-t",
+      "lights": [
+        "1",
+        "2"
+      ],
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": true,
+      "locked": true,
+      "appdata": {},
+      "picture": "",
+      "lastupdated": "2018-10-22T23:35:17",
+      "version": 2
+    }
+  },
+  "rules": {
+    "1": {
+      "name": "RpsIphone",
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "created": "2018-10-21T01:41:51",
+      "lasttriggered": "2018-10-22T22:38:26",
+      "timestriggered": 3,
+      "status": "enabled",
+      "recycle": false,
+      "conditions": [
+        {
+          "address": "/sensors/2/state/lastupdated",
+          "operator": "dx"
+        },
+        {
+          "address": "/sensors/2/state/presence",
+          "operator": "eq",
+          "value": "true"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/sensors/3/state",
+          "method": "PUT",
+          "body": {
+            "presence": true
+          }
+        }
+      ]
+    },
+    "2": {
+      "name": "RpsIphone",
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "created": "2018-10-21T01:41:51",
+      "lasttriggered": "2018-10-22T14:05:55",
+      "timestriggered": 2,
+      "status": "enabled",
+      "recycle": false,
+      "conditions": [
+        {
+          "address": "/sensors/2/state/lastupdated",
+          "operator": "dx"
+        },
+        {
+          "address": "/sensors/2/state/presence",
+          "operator": "eq",
+          "value": "false"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/sensors/3/state",
+          "method": "PUT",
+          "body": {
+            "presence": false
+          }
+        }
+      ]
+    },
+    "3": {
+      "name": "Go to sleep start",
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "created": "2018-10-21T01:44:18",
+      "lasttriggered": "2018-10-22T02:00:00",
+      "timestriggered": 2,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/5/state/flag",
+          "operator": "eq",
+          "value": "true"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/groups/0/action",
+          "method": "PUT",
+          "body": {
+            "scene": "Wrz0KzWoCt0P-8A"
+          }
+        }
+      ]
+    },
+    "4": {
+      "name": "Go to sleep fade",
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "created": "2018-10-21T01:44:18",
+      "lasttriggered": "2018-10-22T02:01:00",
+      "timestriggered": 2,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/5/state/flag",
+          "operator": "eq",
+          "value": "true"
+        },
+        {
+          "address": "/sensors/5/state/flag",
+          "operator": "ddx",
+          "value": "PT00:01:00"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/groups/0/action",
+          "method": "PUT",
+          "body": {
+            "scene": "C5MoOCaA6WeLiSC"
+          }
+        },
+        {
+          "address": "/sensors/5/state",
+          "method": "PUT",
+          "body": {
+            "flag": false
+          }
+        }
+      ]
+    },
+    "7": {
+      "name": "5:huelabs/sunset-timer",
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "created": "2018-10-22T23:35:17",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/1/state/daylight",
+          "operator": "eq",
+          "value": "false"
+        },
+        {
+          "address": "/sensors/1/state/daylight",
+          "operator": "dx"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/groups/2/action",
+          "method": "PUT",
+          "body": {
+            "scene": "OzUGvczbksBKkAp"
+          }
+        }
+      ]
+    },
+    "8": {
+      "name": "5:huelabs/sunset-timer",
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "created": "2018-10-22T23:35:17",
+      "lasttriggered": "none",
+      "timestriggered": 0,
+      "status": "enabled",
+      "recycle": true,
+      "conditions": [
+        {
+          "address": "/sensors/1/state/daylight",
+          "operator": "eq",
+          "value": "true"
+        },
+        {
+          "address": "/sensors/1/state/daylight",
+          "operator": "dx"
+        }
+      ],
+      "actions": [
+        {
+          "address": "/groups/2/action",
+          "method": "PUT",
+          "body": {
+            "on": false,
+            "transitiontime": 6000
+          }
+        }
+      ]
+    }
+  },
+  "sensors": {
+    "1": {
+      "state": {
+        "daylight": false,
+        "lastupdated": "2018-10-22T21:22:00"
+      },
+      "config": {
+        "on": true,
+        "configured": true,
+        "sunriseoffset": 30,
+        "sunsetoffset": -30
+      },
+      "name": "Daylight",
+      "type": "Daylight",
+      "modelid": "PHDL00",
+      "manufacturername": "Philips",
+      "swversion": "1.0"
+    },
+    "2": {
+      "state": {
+        "presence": true,
+        "lastupdated": "2018-10-22T22:38:26"
+      },
+      "config": {
+        "on": true,
+        "reachable": true
+      },
+      "name": "RpsIphone",
+      "type": "Geofence",
+      "modelid": "HA_GEOFENCE",
+      "manufacturername": "Philips",
+      "swversion": "1.0",
+      "uniqueid": "L_02_9jWPz",
+      "recycle": false
+    },
+    "3": {
+      "state": {
+        "presence": true,
+        "lastupdated": "2018-10-22T22:38:26"
+      },
+      "config": {
+        "on": true,
+        "reachable": true
+      },
+      "name": "HomeAway",
+      "type": "CLIPPresence",
+      "modelid": "HOMEAWAY",
+      "manufacturername": "Philips",
+      "swversion": "1.0",
+      "uniqueid": "L_01_YQDm7",
+      "recycle": false
+    },
+    "5": {
+      "state": {
+        "flag": false,
+        "lastupdated": "2018-10-22T02:01:00"
+      },
+      "config": {
+        "on": true,
+        "reachable": true
+      },
+      "name": "Go to sleep",
+      "type": "CLIPGenericFlag",
+      "modelid": "GOTOSLEEP",
+      "manufacturername": "Philips",
+      "swversion": "A_1",
+      "uniqueid": "L_05_sAlcD",
+      "recycle": true
+    }
+  },
+  "resourcelinks": {
+    "29561": {
+      "name": "Night",
+      "description": "Go to sleep behaviour",
+      "type": "Link",
+      "classid": 20010,
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "links": [
+        "/sensors/5",
+        "/schedules/1",
+        "/groups/1",
+        "/rules/3",
+        "/rules/4",
+        "/scenes/C5MoOCaA6WeLiSC",
+        "/scenes/Wrz0KzWoCt0P-8A"
+      ]
+    },
+    "38798": {
+      "name": "HueLabs 2.0",
+      "description": "All installed formulas",
+      "type": "Link",
+      "classid": 1,
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": false,
+      "links": [
+        "/resourcelinks/4805"
+      ]
+    },
+    "4805": {
+      "name": "Sunset to sunrise",
+      "description": "664127eec7cc19b6b7635e8811b3669d:0:6b592a8cdb65e9c80cc429d33b17",
+      "type": "Link",
+      "classid": 2,
+      "owner": "oOkEqFnel2ahz8CngoVzQVUQWqrgrtDY3h3uwxjp",
+      "recycle": true,
+      "links": [
+        "/scenes/OzUGvczbksBKkAp",
+        "/rules/7",
+        "/rules/8"
+      ]
+    }
+  }
+}
