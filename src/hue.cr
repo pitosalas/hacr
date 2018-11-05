@@ -12,7 +12,7 @@ BRIDGE_IP = "10.0.0.89"
 USERNAME = "78UEGUotX3otmWxbhiucELCLiiKmaD9E2O5YW-d1"
 
 class Hue
-  @@bridge_state = nil
+  @@bridge_state : String?  = nil
   
   def initialize(context, bridge_state)
     @context = context
@@ -25,7 +25,7 @@ class Hue
   def self.bridge_state
     if @@bridge_state.nil?
       response = Crest.get("http://#{BRIDGE_IP}/api/#{USERNAME}/")
-      @@bridge_state = JSON.parse(response.body)
+      @@bridge_state = JSON.parse(response.body).to_s
     end
     @@bridge_state
   end

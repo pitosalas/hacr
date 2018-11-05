@@ -39,7 +39,12 @@ class Hacr
   end
   
   def list_command
-    puts "listing"
+    hue = Hue.new(context, Hue.bridge_state)
+    table = CliTable.new
+    table.headers = list_headers
+    table.rows =  hue.all_a list_headers
+    table.column_widths = column_widths
+    puts table.render
   end
 
 end

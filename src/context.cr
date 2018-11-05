@@ -1,10 +1,44 @@
 require "sqlite3"
 
+# We use a sqllite3 table with one record for the state:
+# sqllite3 table: ha_state(name, value)
+# Single record has name: "hue_state"
+# 
+
 class Context
   FILE_SPEC = "/Users/pitosalas/.file.db"
   SQLLITE_URL = "sqlite3://#{FILE_SPEC}"
 
-  # sqllite3 table: ha_state(property, value)
+  @db : DB::Database
+
+  def initialize
+    @db = create_or_open
+    @db.query("select name, value from ha_store") do |rs|
+      puts "#{rs.column_name(0)} #{rs.column_name(1)}"
+      rs.each do
+        prop = rs.read(String)
+        value = rs.read(String)
+      end
+    end
+  end
+
+  def get_property(prop)
+    value = "none"
+    @db.query("select name, value from ha_store") do |rs|
+      puts "#{rs.column_name(0)} #{rs.column_name(1)}"
+      rs.each do
+        if rs.read(String) == prop 
+          value = rs.read(String)
+        end
+      end
+    end
+    value
+  end
+
+  def set_property(name, value)
+    @db.exec("update ha_store set value = ? where name = ?", value, name)
+  end
+
   def create_or_open
     db = DB.open SQLLITE_URL
     if (!db_exist?(db))
@@ -27,6 +61,8 @@ class Context
 
   def db_create(db)
     db.exec "create table ha_store (name text, value string)"
+    db.exec "insert into ha_store values (?, ?)", "hue_state", ""
+    puts "inserted record into ha_store"
   end
 
   def db_delete
