@@ -2,14 +2,14 @@ require "./hue_resource"
 
 # Represent Hue Sensors
 class Sensor < HueResource
-  getter :detail, :on, :name
 
   def initialize(key, hashvalue)
     super
-    key = analyze_detail @detail
-    @on = hashvalue.dig("state", key)
-    gen_reskey("s")
-    @state.merge! ({"on" => @on})
+    # detail = @hub_status_json.fetch("detail").to_s
+    # key = analyze_detail(detail)
+    # # @on = hashvalue.dig("state", key)
+    # gen_reskey("s")
+    # # @state.merge! ({"on" => @on})
   end
 
   def array(selectors)

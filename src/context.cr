@@ -22,7 +22,7 @@ class Context
     end
   end
 
-  def get_property(prop)
+  def get_property(prop) : String
     value = "none"
     @db.query("select name, value from ha_store") do |rs|
       puts "#{rs.column_name(0)} #{rs.column_name(1)}"

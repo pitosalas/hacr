@@ -20,15 +20,18 @@ require "./spec_helper"
 
 describe "able to get state of philips hue bridge" do
   it "returns a valid hash" do
-    state_h = Hue.bridge_state
-    state_h.should be_a String
+    bridge_state = Hue.bridge_state
+    bridge_state.should be_a JSON::Any
   end
   
   it "returns all devices in a single array" do
-    state_h = Hue.bridge_state
+    bridge_state = Hue.bridge_state
     context = Context.new
-    context.set_property("hue_state", state_h)
-    # hue = Hue.new(context, state_h)
+    context.set_property("hue_state", bridge_state.to_s)
+    state = bridge_state["groups"]
+    puts state.as_h.map { |k, v| Sensor.new(k, v)}
+
+    # hue = Hue.new(context)
     # res = hue.all_a ["name", "detail", "on"]
     # res.length.must_be :>, 0
   end

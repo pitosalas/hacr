@@ -3,9 +3,6 @@ require "json"
 class HueResource
   @hub_status_json : Hash(String, JSON::Any)
   @state : Hash(String, String)
-  # getter @state : Hash(String, String), 
-  #                 @detail : String
-  #               @name: String
 
   def initialize(key, hub_status_json : JSON::Any)
     @hub_status_json = hub_status_json.as_h

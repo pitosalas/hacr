@@ -12,22 +12,17 @@ BRIDGE_IP = "10.0.0.89"
 USERNAME = "78UEGUotX3otmWxbhiucELCLiiKmaD9E2O5YW-d1"
 
 class Hue
-  @@bridge_state : String?  = nil
-  
-  def initialize(context, bridge_state)
+  def initialize(context : Context)
     @context = context
-    @bridge_state = bridge_state
-    @groups =  groups
-    @sensors =  sensors
-    @lights =  lights
+    hue_state = JSON.parse(context.get_property("hue_state"))
+    @groups =  groups(hue_state)
+    @sensors =  sensors(hue_state)
+    @lights =  lights(hue_state)
   end
 
   def self.bridge_state
-    if @@bridge_state.nil?
-      response = Crest.get("http://#{BRIDGE_IP}/api/#{USERNAME}/")
-      @@bridge_state = JSON.parse(response.body).to_s
-    end
-    @@bridge_state
+    response = Crest.get("http://#{BRIDGE_IP}/api/#{USERNAME}/")
+    JSON.parse(response.body)
   end
 
   def pair
@@ -40,18 +35,19 @@ class Hue
     parsed.to_a.map { |sensor_pair| Sensor.new(*sensor_pair)}
   end
 
-  def lights
-    parsed = @bridge_state["lights"]
+  def lights(hue_state)
+    parsed = hue_state["lights"]
     parsed.to_a.map { |light_pair| Light.new(*light_pair, @groups)}
   end
 
-  def groups
-    parsed = @bridge_state["groups"]
-    parsed.to_a.map { |group_pair| Group.new(*group_pair)}
+  def groups(hue_state)
+    state = hue_state["groups"]
+    state.as_h.each { |k, v| puts "********", k, v }
+    state.as_h.eac { |group_pair| Group.new(*group_pair)}
   end
 
-  def rules
-    parsed = @bridge_state["rules"]
+  def rules(hue_state)
+    parsed = hue_state["rules"]
     parsed.to_a.map { |rule_pair| Rule.new(*rule_pair)}
   end
 
