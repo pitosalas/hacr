@@ -4,10 +4,10 @@ class Group  < HueResource
   getter :detail, :on, :name, :lights
   def initialize(key, hashvalue)
     super
-    @lights = hashvalue["lights"]
-    @lights_s = hashvalue["lights"].join(",")
-    gen_reskey("g")
-    @state.merge! ({"on" =>@lights_s, "name" => @name, "detail" => @detail})
+    # @lights = hashvalue["lights"]
+    # @lights_s = hashvalue["lights"].join(",")
+    # gen_reskey("g")
+    # @state.merge! ({"on" =>@lights_s, "name" => @name, "detail" => @detail})
   end
 
   def array(selectors)

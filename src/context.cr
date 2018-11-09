@@ -35,6 +35,12 @@ class Context
     value
   end
 
+  def get_property_as_json(prop) : JSON::Any
+    prop_json = get_property(prop)
+    JSON.parse(prop_json)
+  end
+
+
   def set_property(name, value)
     @db.exec("update ha_store set value = ? where name = ?", value, name)
   end

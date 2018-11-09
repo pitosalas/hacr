@@ -1,17 +1,19 @@
 require "./hue_resource"
 
 class Light < HueResource
+  @brightstate : String
+  @onstate : String
 
-  def initialize(key, hashvalue, grouparray)
+  def initialize(key : String, hashvalue, grouparray)
     super(key, hashvalue)
-    @grouparray = grouparray
-    @onstate = hashvalue.dig("state", "on")
-    @brightstate = hashvalue.dig("state", "bri")
+    # @grouparray = grouparray
+    @onstate = hashvalue["state"]["on"].to_s
+    @brightstate = hashvalue["state"]["bri"].to_s
     @combinedsate = "#{@onstate} (#{@brightstate})"
     @number = key
-    @group = Group.owning(key, grouparray)
+    # @group = Group.owning(key, grouparray)
     gen_reskey("l")
-    build_name
+    # build_name
     @state.merge! ({"on" => @combinedsate})
   end
 

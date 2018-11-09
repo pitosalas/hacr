@@ -29,5 +29,4 @@ class Sensor < HueResource
     end
     key
   end
-
 end
