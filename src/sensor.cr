@@ -5,11 +5,11 @@ class Sensor < HueResource
 
   def initialize(key, hashvalue)
     super
-    # detail = @hub_status_json.fetch("detail").to_s
-    # key = analyze_detail(detail)
-    # # @on = hashvalue.dig("state", key)
-    # gen_reskey("s")
-    # # @state.merge! ({"on" => @on})
+    detail = @state.fetch("detail").to_s
+    key = analyze_detail(detail)
+    on = hashvalue["state"][key].to_s
+    gen_reskey("s")
+    @state.merge! ({"on" => on})
   end
 
   def array(selectors)
@@ -29,4 +29,6 @@ class Sensor < HueResource
     end
     key
   end
+
+  
 end

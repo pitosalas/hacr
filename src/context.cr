@@ -14,7 +14,6 @@ class Context
   def initialize
     @db = create_or_open
     @db.query("select name, value from ha_store") do |rs|
-      puts "#{rs.column_name(0)} #{rs.column_name(1)}"
       rs.each do
         prop = rs.read(String)
         value = rs.read(String)
@@ -25,7 +24,6 @@ class Context
   def get_property(prop) : String
     value = "none"
     @db.query("select name, value from ha_store") do |rs|
-      puts "#{rs.column_name(0)} #{rs.column_name(1)}"
       rs.each do
         if rs.read(String) == prop 
           value = rs.read(String)
@@ -68,7 +66,7 @@ class Context
   def db_create(db)
     db.exec "create table ha_store (name text, value string)"
     db.exec "insert into ha_store values (?, ?)", "hue_state", ""
-    puts "inserted record into ha_store"
+    puts "**** inserted record into ha_store"
   end
 
   def db_delete

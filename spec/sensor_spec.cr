@@ -9,3 +9,13 @@ describe "able to build a sensor" do
     sensors_array.should be_a Array(Sensor)
   end
 end
+
+it "returns all Sensors in a single array" do
+  context = Context.new
+  context.set_property("hue_state", Hue.bridge_state)
+  state = context.get_property_as_json("hue_state")
+  state = state["sensors"]
+  sensors = state.as_h.map { |k, v| Sensor.new(k, v)}
+  sensors.should be_a Array(Sensor)
+end
+

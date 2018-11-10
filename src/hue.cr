@@ -1,12 +1,6 @@
 
 require "json"
 require "crest"
-require "./hue_resource"
-
-# require "./sensor"
-# require "./light"
-# require "./group"
-require "./rule"
 
 BRIDGE_IP = "10.0.0.89"
 USERNAME = "78UEGUotX3otmWxbhiucELCLiiKmaD9E2O5YW-d1"

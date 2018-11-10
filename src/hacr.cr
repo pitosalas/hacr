@@ -1,3 +1,12 @@
+require "./hue"
+require "./hue_resource"
+require "./group"
+require "./light"
+require "./rule"
+require "./sensor"
+require "./context"
+require "./cli_table"
+
 class Hacr
 
   USAGE = <<-USAGE
@@ -39,12 +48,22 @@ class Hacr
   end
   
   def list_command
-    hue = Hue.new(context, Hue.bridge_state)
+    context = Context.new
+    context.set_property("hue_state", Hue.bridge_state)
+    hue = Hue.new(context)
     table = CliTable.new
     table.headers = list_headers
     table.rows =  hue.all_a list_headers
     table.column_widths = column_widths
     puts table.render
+  end
+
+  def list_headers
+    ["id", "name", "on", "detail"]
+  end
+
+  def column_widths
+    [5, 22, 12, -30]
   end
 
 end

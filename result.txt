@@ -1,0 +1,25 @@
+    id                   name           on detail                        
+    s1               Daylight         true Daylight                      
+    s2              RpsIphone         true Geofence                      
+    s3               HomeAway         true CLIPPresence                  
+    s5            Go to sleep        false CLIPGenericFlag               
+    s6    Evening light in LR        false CLIPGenericFlag               
+    s7 Night light front porch            1 CLIPGenericStatus             
+    l1             Steps left    false (1) Dimmable light                
+    l2           Streps right    false (1) Dimmable light                
+    l3            Mantel left  false (254) Dimmable light                
+    l4                 Stairs  false (254) Dimmable light                
+    l5           Mantel right  false (254) Dimmable light                
+    l6                   Sofa  false (254) Dimmable light                
+    g1             Livingroom   4, 5, 6, 3 Room                          
+    g2                  Front         2, 1 Room                          
+    r1              RpsIphone      enabled 2 conds => 1 acts             
+    r2              RpsIphone      enabled 2 conds => 1 acts             
+    r3      Go to sleep start      enabled 1 conds => 1 acts             
+    r4       Go to sleep fade      enabled 2 conds => 2 acts             
+    r5        Routine 6.start      enabled 2 conds => 1 acts             
+    r6          Routine 6.end      enabled 2 conds => 2 acts             
+    r7 5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+    r8 5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+    r9        Routine 7.start      enabled 3 conds => 2 acts             
+   r10          Routine 7.end      enabled 3 conds => 2 acts             
