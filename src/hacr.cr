@@ -59,11 +59,11 @@ class Hacr
   end
 
   def list_headers
-    ["id", "name", "on", "detail"]
+    ["timestamp", "id", "name", "on", "detail"]
   end
 
   def column_widths
-    [5, 22, 12, -30]
+    [10, 5, 24, 12, -30]
   end
 
 end

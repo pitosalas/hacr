@@ -1,8 +1,8 @@
 require "./hue_resource"
 class Rule  < HueResource
 
-  def initialize(key, hashvalue)
-    super(key, hashvalue)
+  def initialize(timestamp, key, hashvalue)
+    super
     detail = "#{hashvalue["conditions"].size} conds => #{hashvalue["actions"].size} acts"
     @state.merge! ({"on" => hashvalue["status"].to_s, "detail" => detail})
     gen_reskey("r")

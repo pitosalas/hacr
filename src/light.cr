@@ -4,8 +4,8 @@ class Light < HueResource
   @brightstate : String
   @onstate : String
 
-  def initialize(key : String, hashvalue, grouparray)
-    super(key, hashvalue)
+  def initialize(timestamp, key : String, hashvalue, grouparray)
+    super(timestamp, key, hashvalue)
     # @grouparray = grouparray
     @onstate = hashvalue["state"]["on"].to_s
     @brightstate = hashvalue["state"]["bri"].to_s

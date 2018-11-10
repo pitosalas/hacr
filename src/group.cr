@@ -2,7 +2,7 @@ require "./hue_resource"
 
 class Group  < HueResource
   getter :detail, :on, :name
-  def initialize(key, hashvalue)
+  def initialize(timestamp, key, hashvalue)
     super
     lights = hashvalue["lights"].as_a
     light_list_string = lights.map { |l| l.to_s }.join(", ")
