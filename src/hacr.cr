@@ -14,7 +14,7 @@ class Hacr
   end
 
   private getter options
-
+# @pitosalas your case is reversed: do case command; when .starts_with? "help" for example
   def run
     command = options.first?
     case
