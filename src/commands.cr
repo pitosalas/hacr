@@ -1,6 +1,7 @@
 class Commands
 
   def self.do_list_command(repeat_count, sleep_time, show_headers, list_headers, column_widths)
+    puts repeat_count, sleep_time, show_headers
     while (repeat_count > 0)
       context = Context.new
       context.set_property("hue_state", Hue.bridge_state)

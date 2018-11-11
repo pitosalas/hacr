@@ -12,6 +12,9 @@ require "./commands"
 
 class Hacr
 
+  @repeat_count : Int64
+  @show_headers : Bool
+
   USAGE = <<-USAGE
   Usage: hacr [command]
   Command:
@@ -22,56 +25,72 @@ class Hacr
 
   VERSION = "0.1"
 
-  def initialize(@options : Array(String))
+  def initialize(@commands : Array(String))
+    @repeat_count = 1
+    @show_headers = true
   end
 
-  private getter options
-
-  def run
-    command = options.shift
-    command ||= ""
-    case command
-    when ""
-      puts USAGE
-      exit
-    when .starts_with?("help")
-      puts USAGE
-      exit
-    when .starts_with?("version")
-      puts VERSION
-      exit
-    when .starts_with?("list")
-      parse_list_command
-    else
-      puts "unknown command #{command}"
-    end
-  end
+  private getter commands
 
   def self.run(args)
     new(args).run
   end
   
-  private def parse_list_command
-    repeat_forever = false
-    repeat_count = 1
-    show_headers = true
-    OptionParser.parse(options) do |parser|
+
+  def run
+    handle_null_command(commands)
+    handle_options(commands)
+    handle_command(commands)
+    exit 1
+  end 
+
+  def handle_null_command(options)
+    if options.size == 0 || !is_command?(options[0])
+      puts USAGE
+      exit
+    end
+  end
+
+  def  handle_command(command)
+    command_word = command[0].downcase
+    return unless is_command?(command_word)
+    case command_word
+    when .starts_with?("help")
+      puts USAGE
+    when .starts_with?("version")
+      puts VERSION
+      exit
+    when .starts_with?("list")
+      Commands.do_list_command(@repeat_count, 3600, @show_headers, list_headers, column_widths)
+    else
+      puts "unknown command #{command_word}"
+    end
+  end
+
+  def is_command?(string)
+    /\A\w+\z/ =~ string
+  end
+
+  def handle_options(commands)
+    if is_command?(commands[0])
+      commands = commands[1..-1]
+    end
+    OptionParser.parse(commands) do |parser|
       parser.on("-r", "--repeat", "Repeat LIST command continuously") do
-        repeat_count = 99999999999
-        show_headers = false
+        @repeat_count = 99999999999
+        @show_headers = false
       end
       parser.on("-c COUNT", "--count=COUNT", "How often to repeat before exiting") do |rep| 
-        repeat_count = rep.to_i
-        show_headers = false
+        @repeat_count = rep.to_i64
+        @show_headers = false
       end
       parser.on("-h", "--help", "Show help for options on LIST command") do
         puts parser
-        repeat_count = 0
+        @repeat_count = 0
       end
     end
-    Commands.do_list_command(repeat_count, 3600, show_headers, list_headers, column_widths)
   end
-
+  
   def list_headers
     ["timestamp", "id", "name", "on", "detail"]
   end

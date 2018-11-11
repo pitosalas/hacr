@@ -1,15 +1,17 @@
-require "option_parser"
+class Test
+  @repeat_count : Int16
 
-upcase = false
-destination = "World"
+  def initialize(@commands : Array(String))
+    @repeat_count = 1
+  end
 
-OptionParser.parse! do |parser|
-  parser.banner = "Usage: salute [arguments]"
-  parser.on("-u", "--upcase", "Upcases the salute") { upcase = true }
-  parser.on("-t NAME", "--to=NAME", "Specifies the name to salute") { |name| puts typeof(name.to_i) }
-  parser.on("-h", "--help", "Show this help") { puts parser }
+  def self.run(param)
+    new(param).run
+  end
+
+  def run
+    puts @commands
+  end
 end
 
-destination = destination.upcase if upcase
-puts "Hello #{destination}!"
-
+Test.run(ARGV)
