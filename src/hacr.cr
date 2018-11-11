@@ -69,7 +69,7 @@ class Hacr
         repeat_count = 0
       end
     end
-    Commands.do_list_command(repeat_count, show_headers, list_headers, column_widths)
+    Commands.do_list_command(repeat_count, 3600, show_headers, list_headers, column_widths)
   end
 
   def list_headers
