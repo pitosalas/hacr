@@ -1,3 +1,15 @@
-puts Time.parse("2015-10-12 10:30:00 +00:00", "%Y-%m-%d %H:%M:%S %z", Time::Location.local)
+require "option_parser"
 
-puts Time.parse!("2015-10-12 10:30:00 +00:00", "%F %T %:z")
+upcase = false
+destination = "World"
+
+OptionParser.parse! do |parser|
+  parser.banner = "Usage: salute [arguments]"
+  parser.on("-u", "--upcase", "Upcases the salute") { upcase = true }
+  parser.on("-t NAME", "--to=NAME", "Specifies the name to salute") { |name| puts typeof(name.to_i) }
+  parser.on("-h", "--help", "Show this help") { puts parser }
+end
+
+destination = destination.upcase if upcase
+puts "Hello #{destination}!"
+

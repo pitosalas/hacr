@@ -21,7 +21,6 @@ class Hue
     @sensors =  sensors
     @lights = lights
     @rules = rules
-    puts @hue_state["config"]["UTC"]
   end
 
   def self.bridge_state

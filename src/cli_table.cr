@@ -3,11 +3,13 @@ class CliTable
   @headers : Array(String)
   @rows : Array(Array(String))
   @column_widths : Array(Int32)
+  @show_headers : Bool
 
-  def initialize
+  def initialize(show_headers)
     @headers = Array(String).new
     @rows = Array(Array(String)).new
     @column_widths = Array(Int32).new
+    @show_headers = show_headers
   end
 
   def add(headers, rows)
@@ -45,7 +47,7 @@ class CliTable
 
 
   def render
-    result = header_render + "\n"
+    result = @show_headers ? header_render + "\n" : ""
     @rows.each do |row|
       result += row_render(row) + "\n"
     end

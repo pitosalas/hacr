@@ -1,3 +1,5 @@
+require "option_parser"
+
 require "./hue"
 require "./hue_resource"
 require "./group"
@@ -6,6 +8,7 @@ require "./rule"
 require "./sensor"
 require "./context"
 require "./cli_table"
+require "./commands"
 
 class Hacr
 
@@ -23,21 +26,22 @@ class Hacr
   end
 
   private getter options
-# @pitosalas your case is reversed: do case command; when .starts_with? "help" for example
+
   def run
-    command = options.first?
-    case
-    when !command
+    command = options.shift
+    command ||= ""
+    case command
+    when ""
       puts USAGE
       exit
-    when "help".starts_with?(command)
+    when .starts_with?("help")
       puts USAGE
       exit
-    when "version".starts_with?(command)
+    when .starts_with?("version")
       puts VERSION
       exit
-    when "list".starts_with?(command)
-      list_command
+    when .starts_with?("list")
+      parse_list_command
     else
       puts "unknown command #{command}"
     end
@@ -47,15 +51,25 @@ class Hacr
     new(args).run
   end
   
-  def list_command
-    context = Context.new
-    context.set_property("hue_state", Hue.bridge_state)
-    hue = Hue.new(context)
-    table = CliTable.new
-    table.headers = list_headers
-    table.rows =  hue.all_a list_headers
-    table.column_widths = column_widths
-    puts table.render
+  private def parse_list_command
+    repeat_forever = false
+    repeat_count = 1
+    show_headers = true
+    OptionParser.parse(options) do |parser|
+      parser.on("-r", "--repeat", "Repeat LIST command continuously") do
+        repeat_count = 99999999999
+        show_headers = false
+      end
+      parser.on("-c COUNT", "--count=COUNT", "How often to repeat before exiting") do |rep| 
+        repeat_count = rep.to_i
+        show_headers = false
+      end
+      parser.on("-h", "--help", "Show help for options on LIST command") do
+        puts parser
+        repeat_count = 0
+      end
+    end
+    Commands.do_list_command(repeat_count, show_headers, list_headers, column_widths)
   end
 
   def list_headers
