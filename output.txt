@@ -1078,3 +1078,291 @@
    08:56:06    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
    08:56:06    r9          Routine 7.start      enabled 3 conds => 2 acts             
    08:56:06   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   10:21:20    s1                 Daylight         true Daylight                      
+   10:21:20    s2                RpsIphone         true Geofence                      
+   10:21:20    s3                 HomeAway         true CLIPPresence                  
+   10:21:20    s5              Go to sleep        false CLIPGenericFlag               
+   10:21:20    s6      Evening light in LR        false CLIPGenericFlag               
+   10:21:20    s7  Night light front porch            0 CLIPGenericStatus             
+   10:21:20    l1               Steps left    false (1) Dimmable light                
+   10:21:20    l2             Streps right    false (1) Dimmable light                
+   10:21:20    l3              Mantel left  false (252) Dimmable light                
+   10:21:20    l4                   Stairs  false (252) Dimmable light                
+   10:21:20    l5             Mantel right  false (252) Dimmable light                
+   10:21:20    l6                     Sofa  false (252) Dimmable light                
+   10:21:20    g1               Livingroom   4, 5, 6, 3 Room                          
+   10:21:20    g2                    Front         2, 1 Room                          
+   10:21:20    r1                RpsIphone      enabled 2 conds => 1 acts             
+   10:21:20    r2                RpsIphone      enabled 2 conds => 1 acts             
+   10:21:20    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   10:21:20    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   10:21:20    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   10:21:20    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   10:21:20    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   10:21:20    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   10:21:20    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   10:21:20   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   12:51:07    s1                 Daylight         true Daylight                      
+   12:51:07    s2                RpsIphone         true Geofence                      
+   12:51:07    s3                 HomeAway         true CLIPPresence                  
+   12:51:07    s5              Go to sleep        false CLIPGenericFlag               
+   12:51:07    s6      Evening light in LR        false CLIPGenericFlag               
+   12:51:07    s7  Night light front porch            1 CLIPGenericStatus             
+   12:51:07    l1               Steps left    false (1) Dimmable light                
+   12:51:07    l2             Streps right    false (1) Dimmable light                
+   12:51:07    l3              Mantel left  false (252) Dimmable light                
+   12:51:07    l4                   Stairs  false (252) Dimmable light                
+   12:51:07    l5             Mantel right  false (252) Dimmable light                
+   12:51:07    l6                     Sofa  false (252) Dimmable light                
+   12:51:07    g1               Livingroom   4, 5, 6, 3 Room                          
+   12:51:07    g2                    Front         2, 1 Room                          
+   12:51:07    r1                RpsIphone      enabled 2 conds => 1 acts             
+   12:51:07    r2                RpsIphone      enabled 2 conds => 1 acts             
+   12:51:07    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   12:51:07    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   12:51:07    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   12:51:07    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   12:51:07    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   12:51:07    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   12:51:07    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   12:51:07   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   14:27:31    s1                 Daylight         true Daylight                      
+   14:27:31    s2                RpsIphone         true Geofence                      
+   14:27:31    s3                 HomeAway         true CLIPPresence                  
+   14:27:31    s5              Go to sleep        false CLIPGenericFlag               
+   14:27:31    s6      Evening light in LR        false CLIPGenericFlag               
+   14:27:31    s7  Night light front porch            1 CLIPGenericStatus             
+   14:27:31    l1               Steps left    false (1) Dimmable light                
+   14:27:31    l2             Streps right    false (1) Dimmable light                
+   14:27:31    l3              Mantel left  false (252) Dimmable light                
+   14:27:31    l4                   Stairs  false (252) Dimmable light                
+   14:27:31    l5             Mantel right  false (252) Dimmable light                
+   14:27:31    l6                     Sofa  false (252) Dimmable light                
+   14:27:31    g1               Livingroom   4, 5, 6, 3 Room                          
+   14:27:31    g2                    Front         2, 1 Room                          
+   14:27:31    r1                RpsIphone      enabled 2 conds => 1 acts             
+   14:27:31    r2                RpsIphone      enabled 2 conds => 1 acts             
+   14:27:31    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   14:27:31    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   14:27:31    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   14:27:31    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   14:27:31    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   14:27:31    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   14:27:31    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   14:27:31   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   15:27:31    s1                 Daylight         true Daylight                      
+   15:27:31    s2                RpsIphone         true Geofence                      
+   15:27:31    s3                 HomeAway         true CLIPPresence                  
+   15:27:31    s5              Go to sleep        false CLIPGenericFlag               
+   15:27:31    s6      Evening light in LR        false CLIPGenericFlag               
+   15:27:31    s7  Night light front porch            1 CLIPGenericStatus             
+   15:27:31    l1               Steps left    false (1) Dimmable light                
+   15:27:31    l2             Streps right    false (1) Dimmable light                
+   15:27:31    l3              Mantel left  false (252) Dimmable light                
+   15:27:31    l4                   Stairs  false (252) Dimmable light                
+   15:27:31    l5             Mantel right  false (252) Dimmable light                
+   15:27:31    l6                     Sofa  false (252) Dimmable light                
+   15:27:31    g1               Livingroom   4, 5, 6, 3 Room                          
+   15:27:31    g2                    Front         2, 1 Room                          
+   15:27:31    r1                RpsIphone      enabled 2 conds => 1 acts             
+   15:27:31    r2                RpsIphone      enabled 2 conds => 1 acts             
+   15:27:31    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   15:27:31    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   15:27:31    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   15:27:31    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   15:27:31    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   15:27:31    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   15:27:31    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   15:27:31   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   16:27:31    s1                 Daylight        false Daylight                      
+   16:27:31    s2                RpsIphone         true Geofence                      
+   16:27:31    s3                 HomeAway         true CLIPPresence                  
+   16:27:31    s5              Go to sleep        false CLIPGenericFlag               
+   16:27:31    s6      Evening light in LR        false CLIPGenericFlag               
+   16:27:31    s7  Night light front porch            2 CLIPGenericStatus             
+   16:27:31    l1               Steps left   true (144) Dimmable light                
+   16:27:31    l2             Streps right   true (148) Dimmable light                
+   16:27:31    l3              Mantel left  false (252) Dimmable light                
+   16:27:31    l4                   Stairs  false (252) Dimmable light                
+   16:27:31    l5             Mantel right  false (252) Dimmable light                
+   16:27:31    l6                     Sofa  false (252) Dimmable light                
+   16:27:31    g1               Livingroom   4, 5, 6, 3 Room                          
+   16:27:31    g2                    Front         2, 1 Room                          
+   16:27:31    r1                RpsIphone      enabled 2 conds => 1 acts             
+   16:27:31    r2                RpsIphone      enabled 2 conds => 1 acts             
+   16:27:31    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   16:27:31    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   16:27:31    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   16:27:31    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   16:27:31    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   16:27:31    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   16:27:31    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   16:27:31   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   17:27:31    s1                 Daylight        false Daylight                      
+   17:27:31    s2                RpsIphone         true Geofence                      
+   17:27:31    s3                 HomeAway         true CLIPPresence                  
+   17:27:31    s5              Go to sleep        false CLIPGenericFlag               
+   17:27:31    s6      Evening light in LR        false CLIPGenericFlag               
+   17:27:31    s7  Night light front porch            2 CLIPGenericStatus             
+   17:27:31    l1               Steps left   true (144) Dimmable light                
+   17:27:31    l2             Streps right   true (148) Dimmable light                
+   17:27:31    l3              Mantel left   true (254) Dimmable light                
+   17:27:31    l4                   Stairs   true (254) Dimmable light                
+   17:27:31    l5             Mantel right   true (254) Dimmable light                
+   17:27:31    l6                     Sofa  false (252) Dimmable light                
+   17:27:31    g1               Livingroom   4, 5, 6, 3 Room                          
+   17:27:31    g2                    Front         2, 1 Room                          
+   17:27:31    r1                RpsIphone      enabled 2 conds => 1 acts             
+   17:27:31    r2                RpsIphone      enabled 2 conds => 1 acts             
+   17:27:31    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   17:27:31    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   17:27:31    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   17:27:31    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   17:27:31    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   17:27:31    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   17:27:31    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   17:27:31   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   18:54:59    s1                 Daylight        false Daylight                      
+   18:54:59    s2                RpsIphone         true Geofence                      
+   18:54:59    s3                 HomeAway         true CLIPPresence                  
+   18:54:59    s5              Go to sleep        false CLIPGenericFlag               
+   18:54:59    s6      Evening light in LR        false CLIPGenericFlag               
+   18:54:59    s7  Night light front porch            2 CLIPGenericStatus             
+   18:54:59    l1               Steps left   true (144) Dimmable light                
+   18:54:59    l2             Streps right   true (148) Dimmable light                
+   18:54:59    l3              Mantel left   true (254) Dimmable light                
+   18:54:59    l4                   Stairs   true (254) Dimmable light                
+   18:54:59    l5             Mantel right   true (254) Dimmable light                
+   18:54:59    l6                     Sofa  false (252) Dimmable light                
+   18:54:59    g1               Livingroom   4, 5, 6, 3 Room                          
+   18:54:59    g2                    Front         2, 1 Room                          
+   18:54:59    r1                RpsIphone      enabled 2 conds => 1 acts             
+   18:54:59    r2                RpsIphone      enabled 2 conds => 1 acts             
+   18:54:59    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   18:54:59    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   18:54:59    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   18:54:59    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   18:54:59    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   18:54:59    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   18:54:59    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   18:54:59   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   20:26:33    s1                 Daylight        false Daylight                      
+   20:26:33    s2                RpsIphone         true Geofence                      
+   20:26:33    s3                 HomeAway         true CLIPPresence                  
+   20:26:33    s5              Go to sleep        false CLIPGenericFlag               
+   20:26:33    s6      Evening light in LR         true CLIPGenericFlag               
+   20:26:33    s7  Night light front porch            2 CLIPGenericStatus             
+   20:26:33    l1               Steps left   true (144) Dimmable light                
+   20:26:33    l2             Streps right   true (148) Dimmable light                
+   20:26:33    l3              Mantel left   true (254) Dimmable light                
+   20:26:33    l4                   Stairs   true (254) Dimmable light                
+   20:26:33    l5             Mantel right   true (254) Dimmable light                
+   20:26:33    l6                     Sofa   true (254) Dimmable light                
+   20:26:33    g1               Livingroom   4, 5, 6, 3 Room                          
+   20:26:33    g2                    Front         2, 1 Room                          
+   20:26:33    r1                RpsIphone      enabled 2 conds => 1 acts             
+   20:26:33    r2                RpsIphone      enabled 2 conds => 1 acts             
+   20:26:33    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   20:26:33    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   20:26:33    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   20:26:33    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   20:26:33    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   20:26:33    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   20:26:33    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   20:26:33   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   22:58:48    s1                 Daylight        false Daylight                      
+   22:58:48    s2                RpsIphone         true Geofence                      
+   22:58:48    s3                 HomeAway         true CLIPPresence                  
+   22:58:48    s5              Go to sleep        false CLIPGenericFlag               
+   22:58:48    s6      Evening light in LR        false CLIPGenericFlag               
+   22:58:48    s7  Night light front porch            2 CLIPGenericStatus             
+   22:58:48    l1               Steps left   true (144) Dimmable light                
+   22:58:48    l2             Streps right   true (148) Dimmable light                
+   22:58:48    l3              Mantel left    false (1) Dimmable light                
+   22:58:48    l4                   Stairs    false (1) Dimmable light                
+   22:58:48    l5             Mantel right    false (1) Dimmable light                
+   22:58:48    l6                     Sofa    false (1) Dimmable light                
+   22:58:48    g1               Livingroom   4, 5, 6, 3 Room                          
+   22:58:48    g2                    Front         2, 1 Room                          
+   22:58:48    r1                RpsIphone      enabled 2 conds => 1 acts             
+   22:58:48    r2                RpsIphone      enabled 2 conds => 1 acts             
+   22:58:48    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   22:58:48    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   22:58:48    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   22:58:48    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   22:58:48    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   22:58:48    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   22:58:48    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   22:58:48   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   00:59:41    s1                 Daylight        false Daylight                      
+   00:59:41    s2                RpsIphone         true Geofence                      
+   00:59:41    s3                 HomeAway         true CLIPPresence                  
+   00:59:41    s5              Go to sleep        false CLIPGenericFlag               
+   00:59:41    s6      Evening light in LR        false CLIPGenericFlag               
+   00:59:41    s7  Night light front porch            2 CLIPGenericStatus             
+   00:59:41    l1               Steps left   true (144) Dimmable light                
+   00:59:41    l2             Streps right   true (148) Dimmable light                
+   00:59:41    l3              Mantel left    false (1) Dimmable light                
+   00:59:41    l4                   Stairs    false (1) Dimmable light                
+   00:59:41    l5             Mantel right    false (1) Dimmable light                
+   00:59:41    l6                     Sofa    false (1) Dimmable light                
+   00:59:41    g1               Livingroom   4, 5, 6, 3 Room                          
+   00:59:41    g2                    Front         2, 1 Room                          
+   00:59:41    r1                RpsIphone      enabled 2 conds => 1 acts             
+   00:59:41    r2                RpsIphone      enabled 2 conds => 1 acts             
+   00:59:41    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   00:59:41    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   00:59:41    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   00:59:41    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   00:59:41    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   00:59:41    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   00:59:41    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   00:59:41   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   03:00:38    s1                 Daylight        false Daylight                      
+   03:00:38    s2                RpsIphone         true Geofence                      
+   03:00:38    s3                 HomeAway         true CLIPPresence                  
+   03:00:38    s5              Go to sleep        false CLIPGenericFlag               
+   03:00:38    s6      Evening light in LR        false CLIPGenericFlag               
+   03:00:38    s7  Night light front porch            2 CLIPGenericStatus             
+   03:00:38    l1               Steps left   true (144) Dimmable light                
+   03:00:38    l2             Streps right   true (148) Dimmable light                
+   03:00:38    l3              Mantel left    false (1) Dimmable light                
+   03:00:38    l4                   Stairs    false (1) Dimmable light                
+   03:00:38    l5             Mantel right    false (1) Dimmable light                
+   03:00:38    l6                     Sofa    false (1) Dimmable light                
+   03:00:38    g1               Livingroom   4, 5, 6, 3 Room                          
+   03:00:38    g2                    Front         2, 1 Room                          
+   03:00:38    r1                RpsIphone      enabled 2 conds => 1 acts             
+   03:00:38    r2                RpsIphone      enabled 2 conds => 1 acts             
+   03:00:38    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   03:00:38    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   03:00:38    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   03:00:38    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   03:00:38    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   03:00:38    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   03:00:38    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   03:00:38   r10            Routine 7.end      enabled 3 conds => 2 acts             
+   05:01:30    s1                 Daylight        false Daylight                      
+   05:01:30    s2                RpsIphone         true Geofence                      
+   05:01:30    s3                 HomeAway         true CLIPPresence                  
+   05:01:30    s5              Go to sleep        false CLIPGenericFlag               
+   05:01:30    s6      Evening light in LR        false CLIPGenericFlag               
+   05:01:30    s7  Night light front porch            2 CLIPGenericStatus             
+   05:01:30    l1               Steps left   true (144) Dimmable light                
+   05:01:30    l2             Streps right   true (148) Dimmable light                
+   05:01:30    l3              Mantel left    false (1) Dimmable light                
+   05:01:30    l4                   Stairs    false (1) Dimmable light                
+   05:01:30    l5             Mantel right    false (1) Dimmable light                
+   05:01:30    l6                     Sofa    false (1) Dimmable light                
+   05:01:30    g1               Livingroom   4, 5, 6, 3 Room                          
+   05:01:30    g2                    Front         2, 1 Room                          
+   05:01:30    r1                RpsIphone      enabled 2 conds => 1 acts             
+   05:01:30    r2                RpsIphone      enabled 2 conds => 1 acts             
+   05:01:30    r3        Go to sleep start      enabled 1 conds => 1 acts             
+   05:01:30    r4         Go to sleep fade      enabled 2 conds => 2 acts             
+   05:01:30    r5          Routine 6.start      enabled 2 conds => 1 acts             
+   05:01:30    r6            Routine 6.end      enabled 2 conds => 2 acts             
+   05:01:30    r7   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   05:01:30    r8   5:huelabs/sunset-timer      enabled 2 conds => 1 acts             
+   05:01:30    r9          Routine 7.start      enabled 3 conds => 2 acts             
+   05:01:30   r10            Routine 7.end      enabled 3 conds => 2 acts             

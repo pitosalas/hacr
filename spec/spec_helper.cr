@@ -6,6 +6,9 @@ require "../src/context.cr"
 require  "../src/group.cr"
 require  "../src/light.cr"
 require  "../src/sensor.cr"
+require  "../src/out.cr"
+require  "../src/hacr.cr"
+
 
 def hub_status_json_fixture : Hash(String, JSON::Any)
   JSON.parse(File.read("spec/fixtures/state3.json")).as_h

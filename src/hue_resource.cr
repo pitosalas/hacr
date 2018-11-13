@@ -8,7 +8,7 @@ class HueResource
     @hub_status_json = hub_status_json.as_h
     detail = @hub_status_json.fetch("type","none").to_s
     name = @hub_status_json.fetch("name","none").to_s
-    @state = { "key" => key, "detail" => detail, "name" => name, "timestamp" => format(timestamp)}
+    @state = { "key" => key, "detail" => detail, "name" => name, "timestamp" => format(timestamp), "dump" => @hub_status_json.to_s}
   end
 
   def gen_reskey(detail)
