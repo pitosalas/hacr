@@ -9,6 +9,7 @@ require "./sensor"
 require "./context"
 require "./cli_table"
 require "./commands"
+require "./out"
 
 class Hacr
   @repeat_count : Int64
