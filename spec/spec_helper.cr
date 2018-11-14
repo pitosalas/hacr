@@ -7,7 +7,7 @@ require  "../src/group.cr"
 require  "../src/light.cr"
 require  "../src/sensor.cr"
 require  "../src/out.cr"
-require  "../src/hacr.cr"
+require  "../src/cli_hacr.cr"
 
 
 def hub_status_json_fixture : Hash(String, JSON::Any)

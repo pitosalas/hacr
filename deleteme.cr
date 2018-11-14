@@ -1,17 +1,14 @@
-class Test
-  @repeat_count : Int16
+class X
+  @@st = ""
 
-  def initialize(@commands : Array(String))
-    @repeat_count = 1
+  def self.add(str)
+    @@st += str
   end
 
-  def self.run(param)
-    new(param).run
-  end
-
-  def run
-    puts @commands
+  def self.get
+    @@st
   end
 end
 
-Test.run(ARGV)
+X.add("foo")
+puts X.get

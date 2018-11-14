@@ -1,9 +1,9 @@
 require "./spec_helper"
 
-describe "Check basic functionalioty" do
+describe "Check basic functionality" do
   it "works in capture mode" do
     Out.set_capture
-    Out.puts("Hello World")
+    Out.p("Hello World")
     Out.capture.should eq "Hello World"
   end
 end

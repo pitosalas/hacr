@@ -15,4 +15,8 @@ class Commands
       repeat_count -= 1
     end
   end
+  
+  def self.do_show(show_what)
+    puts "show #{show_what}"
+  end
 end

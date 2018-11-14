@@ -1,27 +1,35 @@
 class Out
 
   @@mode = :stdout
-  @@capture = String.new
+  @@capture = ""
 
   def self.set_capture
     @@mode = :capture
-    @@capture = ""
+    reset_capture
+    log("setcapture")
   end
 
-  def self.puts(string)
+  def self.p(string : String)
     case @@mode
     when :stdout
       puts string
     when :capture
       @@capture += string
     end
-  end
-
-  def self.reset_mock
-    @@capture = String.new
+    log("p")
   end
 
   def self.capture
+    log("capture")
     @@capture
+  end
+
+  def self.reset_capture
+    @@capture = ""
+    log("reset_capture")
+  end
+
+  def self.log(w)
+    # puts "log: Capture #{w} = #{@@capture}"
   end
 end
