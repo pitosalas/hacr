@@ -21,7 +21,4 @@ class Light < HueResource
     @state["detail"] += " in " + Group.owning(@number, @grouparray).first.name
   end
   
-  def array(selectors)
-    selectors.map { |key| @state[key] }
-  end
 end

@@ -2,7 +2,7 @@ require "json"
 
 class HueResource
   @hub_status_json : Hash(String, JSON::Any)
-  @state : Hash(String, String)
+  property state : Hash(String, String)
 
   def initialize(timestamp, key, hub_status_json : JSON::Any)
     @hub_status_json = hub_status_json.as_h
@@ -13,6 +13,14 @@ class HueResource
 
   def gen_reskey(detail)
     @state.merge!({ "id" => detail + @state["key"]})
+  end
+
+  def id
+    @state["id"]
+  end
+
+  def array(selectors)
+    selectors.map { |key| @state[key] }
   end
 
   def format(string_time)

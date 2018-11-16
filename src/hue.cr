@@ -11,6 +11,7 @@ class Hue
   @lights : Array(Light)
   @sensors : Array(Sensor)
   @rules : Array(Rule)
+  @resources : Array(HueResource)
   @hue_state : JSON::Any
   
   def initialize(context : Context)
@@ -21,6 +22,7 @@ class Hue
     @sensors =  sensors
     @lights = lights
     @rules = rules
+    @resources = @groups + @sensors + @lights + @rules
   end
 
   def self.bridge_state
@@ -30,6 +32,10 @@ class Hue
   def pair
     @context[:useraccount] = "12345"
     @context.save
+  end
+
+  def find(find_what)
+    @resources.select { |r| r.id == find_what }
   end
 
   def sensors
@@ -74,4 +80,5 @@ class Hue
   def rules_a (selector)
     rules.map { |rule| rule.array(selector)}
   end
+
 end

@@ -1,14 +1,3 @@
-class X
-  @@st = ""
-
-  def self.add(str)
-    @@st += str
-  end
-
-  def self.get
-    @@st
-  end
-end
-
-X.add("foo")
-puts X.get
+a = [1,2,3]
+b = [2,6,7]
+puts a+b

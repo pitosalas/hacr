@@ -12,10 +12,6 @@ class Sensor < HueResource
     @state.merge! ({"on" => on})
   end
 
-  def array(selectors)
-    selectors.map { |key| @state[key] }
-  end
-
   def analyze_detail(detail)
     key = "status"
     if detail == "CLIPPresence"

@@ -69,7 +69,7 @@ class CliHacr
       if !is_command?(param)
         report_unknown_command(command)
       else
-        Commands.do_show(param)
+        Commands.do_show(param, @repeat_count, 3600, @show_headers, list_headers, column_widths)
       end      
     else
       report_unknown_command(command)
