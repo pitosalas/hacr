@@ -22,9 +22,23 @@ describe "able to process commands" do
   end
 
   it "is able to parse switches" do
-    h = CliHacr.new(%w(list -c 0))
+    h = CliHacr.new(%w(list -c0))
     Out.set_capture
     h.run
     h.repeat_count.should eq 0
+  end
+
+  it "is able to see multi word commands" do
+    h = CliHacr.new(%w(a b c d))
+    h.top_level_command_parse
+    h.word_count.should eq 4
+    h.options_count.should eq 0
+  end
+
+  it "is able to see multiple options" do
+    h = CliHacr.new(%w(-w -2 -4004))
+    h.top_level_command_parse
+    h.word_count.should eq 0
+    h.options_count.should eq 3
   end
 end

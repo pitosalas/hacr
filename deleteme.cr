@@ -1,3 +1,4 @@
-a = [1,2,3]
-b = [2,6,7]
-puts a+b
+h = {} of String => String
+h["foo"] = "bar"
+puts h["foo"]
+puts h.fetch("bar")

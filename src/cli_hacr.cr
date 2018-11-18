@@ -14,6 +14,10 @@ require "./out"
 class CliHacr
   property repeat_count : Int64
   property show_headers : Bool
+  property command_words : Array(String)
+  property command_options : Array(String)
+  property word_count
+  property options_count
 
   USAGE = <<-USAGE
   Usage: hacr [command]
@@ -26,65 +30,79 @@ class CliHacr
 
   VERSION = "0.1"
 
-  def initialize(@commands : Array(String))
+  def initialize(@cli_words : Array(String))
     @repeat_count = 1
     @show_headers = true
+    @command_words = [] of String
+    @command_options = [] of String
+    @word_count = 0
+    @options_count = 0
   end
 
-  private getter commands
+  private getter cli_words
 
   def self.run(args)
     new(args).run
   end
 
   def run
-    handle_null_command(commands)
-    handle_options(commands)
-    handle_command(commands)
+    top_level_command_parse
+    handle_null_command
+    handle_options
+    handle_command
   end
 
   def is_command?(string)
     /\A\w+\z/ =~ string
   end
 
-  def handle_null_command(options)
-    if options.size == 0 || !is_command?(options[0])
+  def handle_null_command
+    if @word_count == 0
       Out.p USAGE
     end
   end
 
+  def top_level_command_parse
+    @word_count = 0
+    @options_count = 0
+    cli_words.each do |w|
+      if is_command?(w)
+        command_words.push(w)
+        @word_count +=1
+      else
+        command_options.push(w)
+        @options_count += 1
+      end
+    end
+  end
+
   # Commands are <word> or <word> <param>
-  def handle_command(command)
-    command_word = command[0].downcase
-    param = command.size == 2 ? command[1] : ""
-    return unless is_command?(command_word)
-    case command_word
+  def handle_command
+    command_words.map(&.downcase)
+    case command_words[0]
     when .starts_with?("help")
       Out.p USAGE
     when .starts_with?("version")
       Out.p VERSION
     when .starts_with?("list")
-      Commands.do_list_command(@repeat_count, 3600, @show_headers, list_headers, column_widths)
+      Commands.do_list_command(@repeat_count, 3600, @show_headers)
     when .starts_with?("show")
-      if !is_command?(param)
-        report_unknown_command(command)
+      if command_words.size != 2
+        report_unknown_command
       else
-        Commands.do_show(param, @repeat_count, 3600, @show_headers, list_headers, column_widths)
+        Commands.do_show(command_words[1], @repeat_count, 3600, @show_headers)
       end      
     else
-      report_unknown_command(command)
+      report_unknown_command
     end
   end
 
-  def report_unknown_command(command)
-    Out.p "Unknown command \"#{command.join(", ")}\""
+  def report_unknown_command
+    Out.p "Unknown command \"#{@cli_words.join(" ")}\""
   end
 
-  def handle_options(commands)
-    if is_command?(commands[0])
-      commands = commands[1..-1]
-    end
-    OptionParser.parse(commands) do |parser|
+  def handle_options
+    OptionParser.parse(@command_options) do |parser|
       parser.on("-r", "--repeat", "Repeat LIST command continuously") do
         @repeat_count = 99999999999
         @show_headers = false
@@ -97,13 +115,5 @@ class CliHacr
         @repeat_count = 0
       end
     end
-  end
-
-  def list_headers
-    ["timestamp", "id", "name", "on", "detail"]
-  end
-
-  def column_widths
-    [10, 5, 24, 12, -20]
   end
 end
