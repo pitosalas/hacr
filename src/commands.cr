@@ -1,16 +1,13 @@
 class Commands
-
   def self.do_list_command(repeat_count, sleep_time, show_headers)
-    puts repeat_count
-    puts sleep_time
     while (repeat_count > 0)
-      row_data = get_hue_status.all_a list_headers
-      render_as_table(row_data, show_headers, list_headers, column_widths)
+      extract_data = get_hue_status.all_a selectors
+      render_as_table(extract_data, extract_data, show_headers, column_names, column_widths)
       sleep sleep_time if repeat_count > 1
       repeat_count -= 1
     end
   end
-  
+
   def self.do_show(show_what, repeat_count, sleep_time, show_headers)
     hue = get_hue_status
     resources = hue.find(show_what)
@@ -18,8 +15,10 @@ class Commands
       Out.p "Unknown Hue resource #{show_what}"
       return
     end
-    row_data = resources.map { |res| res.array(list_headers_detailed)}
-    render_as_table(row_data, show_headers, list_headers_detailed, column_widths_detailed)
+    extract_data = resources.map { |res| res.array(selectors) }
+    extract_detail = resources.map { |res| res.array(details) }
+    resources.map { |res| res.array(selectors) }
+    render_as_table(extract_data, extract_detail, show_headers, column_names, column_widths)
   end
 
   def self.get_hue_status
@@ -28,29 +27,29 @@ class Commands
     Hue.new(context)
   end
 
-  def self.render_as_table(row_data, show_headers, headers, widths)
-    table = CliTable.new(show_headers) 
-    table.headers = headers
+  def self.render_as_table(row_data, detail_data, show_headers, headers, widths)
+    table = CliTable.new(show_headers)
+    table.row_headers = headers
+    table.detail_data = detail_data
+    table.detail_labels = details
     table.rows = row_data
     table.column_widths = widths
     Out.p table.render
   end
 
-
-  def self.list_headers_detailed
-    ["timestamp", "id", "name", "on", "detail"]
-  end
-
-  def self.column_widths_detailed
-    [10, 5, 24, 12, -20]
-  end
-
-  def self.list_headers
+  def self.selectors
     ["timestamp", "id", "name", "on"]
+  end
+
+  def self.column_names
+    ["timestamp", "id", "name", "on"]
+  end
+
+  def self.details
+    ["conditions", "actions"]
   end
 
   def self.column_widths
     [10, 5, 24, 12]
   end
-
 end

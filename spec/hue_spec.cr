@@ -10,7 +10,8 @@ describe "able to get state of philips hue bridge" do
     context = Context.new
     context.set_property("hue_state", Hue.bridge_state)
     hue = Hue.new(context)
-    res = hue.all_a ["name", "detail"]
+    res = hue.all_a ["name", "id"]
     res.should be_a Array(Array(String))
+    puts res
   end
 end
