@@ -1,3 +1,4 @@
+# Present data in requested format
 class CliTable
 
   property detail_labels : Array(String) = [] of String

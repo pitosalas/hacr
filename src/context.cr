@@ -66,7 +66,6 @@ class Context
   def db_create(db)
     db.exec "create table ha_store (name text, value string)"
     db.exec "insert into ha_store values (?, ?)", "hue_state", ""
-    puts "**** inserted record into ha_store"
   end
 
   def db_delete

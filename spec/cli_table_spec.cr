@@ -33,4 +33,6 @@ describe "simple table cases" do
     Out.capture.should eq "  A  B\n  1  2\n    age: 12\n    loc: boston\n  3  4\n    age: 13\n    loc: cambridge\n"
   end
 
+  it "can handle the new "
+
 end
