@@ -7,9 +7,10 @@ require "./light"
 require "./rule"
 require "./sensor"
 require "./context"
-require "./cli_table"
+require "./report"
 require "./commands"
 require "./out"
+require "./data_frame"
 
 class CliHacr
   property repeat_count : Int64
@@ -68,7 +69,7 @@ class CliHacr
     cli_words.each do |w|
       if is_command?(w)
         command_words.push(w)
-        @word_count +=1
+        @word_count += 1
       else
         command_options.push(w)
         @options_count += 1
@@ -78,6 +79,7 @@ class CliHacr
 
   # Commands are <word> or <word> <param>
   def handle_command
+    return if word_count == 0
     command_words.map(&.downcase)
     case command_words[0]
     when .starts_with?("help")
@@ -91,7 +93,7 @@ class CliHacr
         report_unknown_command
       else
         Commands.do_show(command_words[1], @repeat_count, 3600, @show_headers)
-      end      
+      end
     else
       report_unknown_command
     end

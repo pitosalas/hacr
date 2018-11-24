@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.26.1">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "";
+</script>
+
+  <meta id="repository-name" content="github.com/pitosalas/hacr">
+  <title>CliHacr - github.com/pitosalas/hacr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" current" data-id="github.com/pitosalas/hacr/CliHacr" data-name="clihacr">
+      <a href="CliHacr.html">CliHacr</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Commands" data-name="commands">
+      <a href="Commands.html">Commands</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Context" data-name="context">
+      <a href="Context.html">Context</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/DataFrame" data-name="dataframe">
+      <a href="DataFrame.html">DataFrame</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Group" data-name="group">
+      <a href="Group.html">Group</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Hue" data-name="hue">
+      <a href="Hue.html">Hue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/HueResource" data-name="hueresource">
+      <a href="HueResource.html">HueResource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Light" data-name="light">
+      <a href="Light.html">Light</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Out" data-name="out">
+      <a href="Out.html">Out</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Report" data-name="report">
+      <a href="Report.html">Report</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Rule" data-name="rule">
+      <a href="Rule.html">Rule</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/pitosalas/hacr/Sensor" data-name="sensor">
+      <a href="Sensor.html">Sensor</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> CliHacr
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="CliHacr.html">CliHacr</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L15" target="_blank">
+        cli_hacr.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="USAGE">
+        <strong>USAGE</strong> = <code><span class="s">&quot;Usage: hacr [command]\nCommand:\n    list                    show all home automation devices\n    help                    show this help\n    version                 show version\n    show                    show status of an individual device&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.1&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28cli_words%3AArray%28String%29%29-class-method" class="signature"><strong>.new</strong>(cli_words : Array(String))</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#run%28args%29-class-method" class="signature"><strong>.run</strong>(args)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#command_options%3AArray%28String%29-instance-method" class="signature"><strong>#command_options</strong> : Array(String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#command_options%3D%28command_options%3AArray%28String%29%29-instance-method" class="signature"><strong>#command_options=</strong>(command_options : Array(String))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#command_words%3AArray%28String%29-instance-method" class="signature"><strong>#command_words</strong> : Array(String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#command_words%3D%28command_words%3AArray%28String%29%29-instance-method" class="signature"><strong>#command_words=</strong>(command_words : Array(String))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#handle_command-instance-method" class="signature"><strong>#handle_command</strong></a>
+        
+          <div class="summary"><p>Commands are &lt;word> or &lt;word> &lt;param></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#handle_null_command-instance-method" class="signature"><strong>#handle_null_command</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#handle_options-instance-method" class="signature"><strong>#handle_options</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_command%3F%28string%29-instance-method" class="signature"><strong>#is_command?</strong>(string)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options_count%3AInt32-instance-method" class="signature"><strong>#options_count</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#options_count%3D%28options_count%29-instance-method" class="signature"><strong>#options_count=</strong>(options_count)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#repeat_count%3AInt64-instance-method" class="signature"><strong>#repeat_count</strong> : Int64</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#repeat_count%3D%28repeat_count%3AInt64%29-instance-method" class="signature"><strong>#repeat_count=</strong>(repeat_count : Int64)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#report_unknown_command-instance-method" class="signature"><strong>#report_unknown_command</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#run-instance-method" class="signature"><strong>#run</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#show_headers%3ABool-instance-method" class="signature"><strong>#show_headers</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#show_headers%3D%28show_headers%3ABool%29-instance-method" class="signature"><strong>#show_headers=</strong>(show_headers : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#top_level_command_parse-instance-method" class="signature"><strong>#top_level_command_parse</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#word_count%3AInt32-instance-method" class="signature"><strong>#word_count</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#word_count%3D%28word_count%29-instance-method" class="signature"><strong>#word_count=</strong>(word_count)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(cli_words:Array(String))-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(cli_words : Array(String))
+
+        <a class="method-permalink" href="#new%28cli_words%3AArray%28String%29%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="run(args)-class-method">
+      <div class="signature">
+        
+        def self.<strong>run</strong>(args)
+
+        <a class="method-permalink" href="#run%28args%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L45" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="command_options:Array(String)-instance-method">
+      <div class="signature">
+        
+        def <strong>command_options</strong> : Array(String)
+
+        <a class="method-permalink" href="#command_options%3AArray%28String%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="command_options=(command_options:Array(String))-instance-method">
+      <div class="signature">
+        
+        def <strong>command_options=</strong>(command_options : Array(String))
+
+        <a class="method-permalink" href="#command_options%3D%28command_options%3AArray%28String%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="command_words:Array(String)-instance-method">
+      <div class="signature">
+        
+        def <strong>command_words</strong> : Array(String)
+
+        <a class="method-permalink" href="#command_words%3AArray%28String%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="command_words=(command_words:Array(String))-instance-method">
+      <div class="signature">
+        
+        def <strong>command_words=</strong>(command_words : Array(String))
+
+        <a class="method-permalink" href="#command_words%3D%28command_words%3AArray%28String%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="handle_command-instance-method">
+      <div class="signature">
+        
+        def <strong>handle_command</strong>
+
+        <a class="method-permalink" href="#handle_command-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Commands are &lt;word> or &lt;word> &lt;param></p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L81" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="handle_null_command-instance-method">
+      <div class="signature">
+        
+        def <strong>handle_null_command</strong>
+
+        <a class="method-permalink" href="#handle_null_command-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L60" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="handle_options-instance-method">
+      <div class="signature">
+        
+        def <strong>handle_options</strong>
+
+        <a class="method-permalink" href="#handle_options-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L106" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_command?(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_command?</strong>(string)
+
+        <a class="method-permalink" href="#is_command%3F%28string%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L56" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options_count:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>options_count</strong> : Int32
+
+        <a class="method-permalink" href="#options_count%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="options_count=(options_count)-instance-method">
+      <div class="signature">
+        
+        def <strong>options_count=</strong>(options_count)
+
+        <a class="method-permalink" href="#options_count%3D%28options_count%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="repeat_count:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>repeat_count</strong> : Int64
+
+        <a class="method-permalink" href="#repeat_count%3AInt64-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="repeat_count=(repeat_count:Int64)-instance-method">
+      <div class="signature">
+        
+        def <strong>repeat_count=</strong>(repeat_count : Int64)
+
+        <a class="method-permalink" href="#repeat_count%3D%28repeat_count%3AInt64%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="report_unknown_command-instance-method">
+      <div class="signature">
+        
+        def <strong>report_unknown_command</strong>
+
+        <a class="method-permalink" href="#report_unknown_command-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L102" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="run-instance-method">
+      <div class="signature">
+        
+        def <strong>run</strong>
+
+        <a class="method-permalink" href="#run-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="show_headers:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>show_headers</strong> : Bool
+
+        <a class="method-permalink" href="#show_headers%3ABool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="show_headers=(show_headers:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>show_headers=</strong>(show_headers : Bool)
+
+        <a class="method-permalink" href="#show_headers%3D%28show_headers%3ABool%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="top_level_command_parse-instance-method">
+      <div class="signature">
+        
+        def <strong>top_level_command_parse</strong>
+
+        <a class="method-permalink" href="#top_level_command_parse-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L66" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="word_count:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>word_count</strong> : Int32
+
+        <a class="method-permalink" href="#word_count%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="word_count=(word_count)-instance-method">
+      <div class="signature">
+        
+        def <strong>word_count=</strong>(word_count)
+
+        <a class="method-permalink" href="#word_count%3D%28word_count%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/pitosalas/hacr/blob/6eb65eaa5552beecefa1cd0531069910db416d87/src/cli_hacr.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,5 +1,4 @@
 class Out
-
   @@mode = :stdout
   @@capture = ""
 

@@ -6,13 +6,13 @@ class HueResource
 
   def initialize(timestamp, key, hub_status_json : JSON::Any)
     @hub_status_json = hub_status_json.as_h
-    detail = @hub_status_json.fetch("type","none").to_s
-    name = @hub_status_json.fetch("name","none").to_s
-    @state = { "key" => key, "detail" => detail, "name" => name, "timestamp" => format(timestamp), "dump" => @hub_status_json.to_s}
+    detail = @hub_status_json.fetch("type", "none").to_s
+    name = @hub_status_json.fetch("name", "none").to_s
+    @state = {"key" => key, "detail" => detail, "name" => name, "timestamp" => format(timestamp), "dump" => @hub_status_json.to_s}
   end
 
   def gen_reskey(detail)
-    @state.merge!({ "id" => detail + @state["key"]})
+    @state.merge!({"id" => detail + @state["key"]})
   end
 
   def id
@@ -20,7 +20,7 @@ class HueResource
   end
 
   def array(selectors)
-    selectors.map { |key| @state[key] }
+    selectors.map { |key| @state.fetch(key, "none") }
   end
 
   def format(string_time)

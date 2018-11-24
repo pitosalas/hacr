@@ -2,10 +2,9 @@ require "./hue_resource"
 
 # Represent Hue Sensors
 class Sensor < HueResource
-
   def initialize(timestamp, key, hashvalue)
     super
-    detail = @state.fetch("detail").to_s
+    detail = @state.fetch("detail", "").to_s
     key = analyze_detail(detail)
     on = hashvalue["state"][key].to_s
     gen_reskey("s")
@@ -25,6 +24,4 @@ class Sensor < HueResource
     end
     key
   end
-
-  
 end

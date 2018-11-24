@@ -1,5 +1,4 @@
-a  = [["A", "B"], ["A1", "B1"]]
+x = {"a" => 1, "b" => 2}
 
-pp a
-pp a[0,1]
-pp a[0][1]
+puts x["a"]
+puts x.fetch("x")

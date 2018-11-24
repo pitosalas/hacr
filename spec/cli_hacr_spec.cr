@@ -14,12 +14,12 @@ describe "able to process commands" do
   #   res.should be_a Array(Array(String))
   # end
 
-  it "is able to process HELP command" do
-    h = CliHacr.new(["help"])
-    Out.set_capture
-    h.run
-    Out.capture.should be_a(String)
-  end
+  # it "is able to process HELP command" do
+  #   h = CliHacr.new(["help"])
+  #   Out.set_capture
+  #   h.run
+  #   Out.capture.should be_a(String)
+  # end
 
   it "is able to parse switches" do
     h = CliHacr.new(%w(list -c0))

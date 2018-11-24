@@ -20,5 +20,4 @@ class Light < HueResource
   def build_name
     @state["detail"] += " in " + Group.owning(@number, @grouparray).first.name
   end
-  
 end

@@ -12,6 +12,5 @@ describe "able to get state of philips hue bridge" do
     hue = Hue.new(context)
     res = hue.all_a ["name", "id"]
     res.should be_a Array(Array(String))
-    puts res
   end
 end
