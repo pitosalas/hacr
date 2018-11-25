@@ -7,7 +7,7 @@ class Sensor < HueResource
     detail = @state.fetch("detail", "").to_s
     key = analyze_detail(detail)
     on = hashvalue["state"][key].to_s
-    gen_reskey("s")
+    gen_reskey("sens")
     @state.merge! ({"on" => on})
   end
 

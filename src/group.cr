@@ -7,7 +7,7 @@ class Group < HueResource
     super
     lights = hashvalue["lights"].as_a
     light_list_string = lights.map { |l| l.to_s }.join(", ")
-    gen_reskey("g")
+    gen_reskey("group")
     @state.merge! ({"on" => light_list_string})
   end
 

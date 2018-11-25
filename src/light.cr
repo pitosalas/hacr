@@ -12,7 +12,7 @@ class Light < HueResource
     @combinedsate = "#{@onstate} (#{@brightstate})"
     @number = key
     # @group = Group.owning(key, grouparray)
-    gen_reskey("l")
+    gen_reskey("light")
     # build_name
     @state.merge! ({"on" => @combinedsate})
   end

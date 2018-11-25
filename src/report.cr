@@ -49,7 +49,7 @@ class Report
   def detail_render(row_number)
     result = ""
     detail_labels.each_index do |index|
-      result += "    #{detail_labels[index]}: #{data_frame.get(detail_labels[index], row_number)}\n"
+      result += "%15s: %-80s\n" % [detail_labels[index], data_frame.get(detail_labels[index], row_number)]
     end
     result
   end

@@ -34,7 +34,7 @@ class Hue
   end
 
   def find(find_what)
-    @resources.select { |r| r.id == find_what }
+    @resources.select { |r| r.id.includes? find_what }
   end
 
   def sensors
