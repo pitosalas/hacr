@@ -37,6 +37,6 @@ describe "simple report case" do
     report.detail_labels = ["B"]
     Out.set_capture
     Out.p report.render
-    Out.capture.should eq "  A\n" + "  1\n" + "    B: 2\n" + "  3\n" + "    B: 4\n"
+    Out.capture.should eq "  A\n  1\n              B: 2                                                                               \n  3\n              B: 4                                                                               \n"
   end
 end
